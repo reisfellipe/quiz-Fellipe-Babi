@@ -4,8 +4,8 @@ import { Screen } from "../App";
 import '../styles/Quiz.css';
 
 type Props = {
+    setScore: React.Dispatch<React.SetStateAction<number>>;
     setScreen: (screen: Screen) => void;
-    setScore: (score: number) => void;
 };
 
 const Quiz = ({ setScreen, setScore }: Props) => {
@@ -33,7 +33,7 @@ const Quiz = ({ setScreen, setScore }: Props) => {
         if (selectedOption === null) {
             setSelectedOption(index);
             if (index === current.correctAnswer) {
-                setScore((prev:number) => prev + 1);  // Passando diretamente o valor incrementado
+                setScore((prev) => prev + 1);  // Passando diretamente o valor incrementado
             }
         }
     };
