@@ -1,0 +1,53 @@
+.result-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff27;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    color: #db81ff;
+    text-shadow: 0px 1px 20px #d52bff;
+}
+
+.love-note {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fefde5e4;
+    border-radius: 36px;
+    font-style: italic;
+    border: 3px solid black;
+}
+.love-note h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.love-note p {
+    color: black;
+    font-size: 20px;
+    font-family: "Playwrite AU SA", sans-serif;
+}
+
+.result-card button {
+    background-color: #f731b8cb;
+    color: rgb(54, 2, 98);
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result-card button:hover {
+    background-color: #570f74;
+    color: #ff04ff;
+    cursor: pointer;
+    box-shadow:-1px 1px 20px 3px #d52bff ;
+}
