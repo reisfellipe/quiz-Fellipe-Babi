@@ -50,7 +50,7 @@ export const questions: Question[] = [
     {
         question: "Qual tipo de date o Fellipe mais amaria fazer com você num dia de frio e chuva?",
         image: img6,
-        options: ["Um jantar à luz de velas em um restaurante local", "Netflix, cobertor e amorzinho", "Dormir o dia inteiro", "Ir ao cinema e depois tomar um café"],
+        options: ["Um jantar à luz de velas em um restaurante local", "Netflix, cobertor e Fazer amor", "Dormir o dia inteiro", "Ir ao cinema e depois tomar um café"],
         correctAnswer:1
     },
     {

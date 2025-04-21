@@ -32,13 +32,12 @@ const Quiz = ({ setScreen, setScore }: Props) => {
     const handleOptionClick = (index: number) => {
         if (selectedOption === null) {
             setSelectedOption(index);
-
-            // Verificar se a resposta está correta
             if (index === current.correctAnswer) {
-                setScore((prev) => prev + 1);
+                setScore((prev:number) => prev + 1);  // Passando diretamente o valor incrementado
             }
         }
     };
+    
 
     // Função para passar para a próxima pergunta ou para o resultado
     const handleNext = () => {

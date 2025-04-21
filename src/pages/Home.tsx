@@ -6,13 +6,14 @@ import her from '../images/her.jpg';
 type Props = {
     setScreen: (screen: Screen) => void;
     setScore: (score: number) => void;
+    handleStartQuiz: () => void;
 };
 
 const Home = ({ setScreen, setScore }: Props) => {
     const startQuiz = () => {
-      setScreen(Screen.QUIZ); // Muda para a tela do quiz
+        setScore(0); // Resetando o score ao iniciar o quiz
+        setScreen(Screen.QUIZ); // Muda para a tela do quiz
     };
-
 
     return (
         <div className="home-card">
@@ -26,10 +27,10 @@ const Home = ({ setScreen, setScore }: Props) => {
 
             <div className="home-buttons">
                 <button onClick={startQuiz}>Iniciar Quiz</button>
-                <button onClick={() => alert("Histórico só depois de jogar ☺️")}>Histórico de partidas</button>
+                <button onClick={() => alert("Histórico só depois de jogar - eu ainda não consegui desenvolver essa parte ☺️")}>Histórico de partidas</button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Home;
